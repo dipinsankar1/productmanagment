@@ -5,12 +5,14 @@ class UserModel {
   final String? email;
   String? password;
   final String? displayName;
+  bool? isVerified;
 
   UserModel({
     this.uid,
     this.email,
     this.password,
     this.displayName,
+    this.isVerified,
   });
 
   Map<String, dynamic> toMap() {
@@ -31,12 +33,14 @@ class UserModel {
     String? email,
     String? password,
     String? displayName,
+    bool? isVerified,
   }) {
     return UserModel(
         uid: uid ?? this.uid,
         email: email ?? this.email,
         password: password ?? this.password,
         displayName: displayName ?? this.displayName,
+        isVerified: isVerified ?? this.isVerified
     );
   }
 }

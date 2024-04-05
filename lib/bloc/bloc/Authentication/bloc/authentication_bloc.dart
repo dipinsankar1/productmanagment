@@ -13,7 +13,6 @@ class AuthenticationBloc extends Bloc<AuthenticationEvent, AuthenticationState> 
 
   AuthenticationBloc(this._authenticationRepository) : super(AuthenticationInitial()) {
     on<AuthenticationEvent>((event, emit) async {
-      // TODO: implement event handler
        if (event is AuthenticationStarted){
         UserModel user = await _authenticationRepository.getCurrentUser().first;
         if( user.uid != 'uid'){

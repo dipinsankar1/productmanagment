@@ -85,14 +85,14 @@ class LoginPage extends StatelessWidget {
       .then((result) {
          if (result == null) {
            Navigator.pushReplacement(context,
-             MaterialPageRoute(builder: (context) => HomeScreen()));
+             MaterialPageRoute(builder: (context) => const HomeScreen()));
           } else {
-            print('----->>>$result');
+            
              ScaffoldMessenger.of(context).showSnackBar(SnackBar(
               backgroundColor: Colors.red,
                  content: Text(
                  result,
-                style: TextStyle(fontSize: 16),
+                style: const TextStyle(fontSize: 16),
                    ),
               ));
            }

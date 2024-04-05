@@ -115,9 +115,9 @@ class SignupPage extends StatelessWidget {
     	if (result == null) {
         print('HOME PAGE');
         Navigator.pushReplacement(context,
-           MaterialPageRoute(builder: (context) => HomeScreen(),));
+           MaterialPageRoute(builder: (context) => const HomeScreen(),));
        } else {
-        print(result.toString());
+        
           // Scaffold.of(context).showSnackBar(SnackBar(
           // content: Text(
           //     result,

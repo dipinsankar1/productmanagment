@@ -1,6 +1,5 @@
-import 'package:flutter/gestures.dart';
+
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:productsample/bloc/bloc/Authentication/bloc/authentication_bloc.dart';
 import 'package:productsample/bloc/bloc/form_validation/bloc/form_bloc.dart';
@@ -51,7 +50,7 @@ class SignInView extends StatelessWidget {
       child: Scaffold(
           appBar: AppBar(
   leading: IconButton(
-    icon: Icon(Icons.arrow_back, color: Colors.black),
+    icon: const Icon(Icons.arrow_back, color: Colors.black),
     onPressed: () => Navigator.of(context).pop(),
   ), 
  

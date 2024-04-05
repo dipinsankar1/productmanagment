@@ -3,8 +3,6 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:productsample/bloc/bloc/Authentication/bloc/authentication_bloc.dart';
 import 'package:productsample/bloc/bloc/products_bloc.dart';
 import 'package:productsample/model/product_model.dart';
-import 'package:productsample/screens/login_screen.dart';
-import 'package:productsample/services/auth_services.dart';
 import 'package:qr_flutter/qr_flutter.dart';
 
 

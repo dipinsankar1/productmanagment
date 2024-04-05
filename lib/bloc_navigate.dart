@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:productsample/bloc/bloc/Authentication/bloc/authentication_bloc.dart';
 import 'package:productsample/screens/home_screen.dart';
-import 'package:productsample/screens/signup_view.dart';
 import 'package:productsample/screens/welcome_screen.dart';
 
 class BlocNavigate extends StatelessWidget {

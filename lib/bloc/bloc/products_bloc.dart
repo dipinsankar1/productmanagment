@@ -10,7 +10,6 @@ class ProductsBloc extends Bloc<ProductsEvent, ProductsState> {
   final FirestoreService _firestoreService;
   ProductsBloc(this._firestoreService) : super(ProductInitial()) {
     on<LoadProducts>((event, emit) async {
-      // TODO: implement event handler
       try {
         emit(ProductLoading());
         final products = await _firestoreService.getProducts().first;

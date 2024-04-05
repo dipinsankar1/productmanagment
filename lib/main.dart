@@ -5,7 +5,6 @@ import 'package:productsample/bloc/bloc/products_bloc.dart';
 import 'package:productsample/bloc_navigate.dart';
 import 'package:productsample/repository/auth_repository.dart';
 import 'package:productsample/repository/db_repository.dart';
-import 'package:productsample/screens/login_screen.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:productsample/services/firestore_service.dart';
@@ -13,7 +12,7 @@ import 'package:productsample/services/firestore_service.dart';
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
